@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 500vh;
+  background-color: palegreen;
+  position: relative;
+}
+
+header {
+  height: 80px;
+  width: inherit;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+nav {
+  width: 100%;
+  height: 100%;
+  background-color: #e74c3c;
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: 64px;
+  background-image: url(./Assets/WAGMI-Logo.jpg);
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: center;
+}
+
+.navbar {
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+}
+
+.hero {
+    width: 100%;
+    height: 725px;
+    background-color: #283C63;
+    position: absolute;
+    top:80px;
+}
