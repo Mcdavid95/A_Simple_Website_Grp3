@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "Wagmi";
+  src: url("lightstories-webfont.woff2") format("woff2");
+  font-display: swap;
+}
 
 * {
   margin: 0;
@@ -8,7 +14,7 @@
 
 body {
   width: 100%;
-  height: 500vh;
+  height: 300vh;
   background-color: palegreen;
   position: relative;
   color: #fff;
@@ -16,7 +22,7 @@ body {
 }
 
 header {
-  height: 80px;
+  height: 10vh;
   width: inherit;
   position: fixed;
   top: 0;
@@ -26,15 +32,18 @@ header {
 nav {
   width: 100%;
   height: 100%;
-  background-color: #FF7069;
-  display: flex;  
+  background-image: url(./Assets/navBg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo {
-  width: 100px;
-  height: 64px;
+  margin-left: 100px;
+  width: 150px;
+  height: 100%;
   background-image: url(./Assets/WAGMI-Logo.jpg);
   background-repeat: no-repeat;
   background-size: 150%;
@@ -42,68 +51,106 @@ nav {
 }
 
 .navbar {
-    width: 50%;
-    height: 100%;
-    background-color: transparent;
-    backdrop-filter: blur(40px);
+  width: 50%;
+  height: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbar a {
+  z-index: 3;
+}
+
+a {
+  text-decoration: none;
+  color: #283c63;
+  font-family: "Wagmi";
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  cursor: pointer;
+  color: white;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+a.active {
+  color: black;
+  font-style: italic;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.contentWrapper {
+    width: 100%;
+    height: 180vh;
+    position: absolute;
+    top: 80px;    
 }
 
 .hero {
-    width: 100%;
-    height: 725px;
-    background-color: #283C63;
-    position: absolute;
-    top:80px;
+  width: 100%;
+  height: 90vh;
+  background-color: #283c63;
 }
 
 button {
-    border: none;
-    outline: none;
-    background-color: transparent;
-    font: inherit;
-    color: #fff;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font: inherit;
+  color: #fff;
 }
 
 .heroArticle {
-    width: 770px;
-    height: 490px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: absolute;
-    top: 10%;
-    left: 5%;
+  width: 770px;
+  height: 490px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 5%;
+  left: 5%;
 }
 
-
 .heroArticle h1 {
-    font-size: 96px;
+  font-size: 96px;
 }
 
 .heroArticle p {
-    width: 540px;
-    font-size: 24px;
-    color: #928A97;
+  width: 540px;
+  font-size: 24px;
+  color: #928a97;
 }
 
 .heroBtn {
-    width: 170px;
-    height: 55px;
-    background-color: #FF7069;
+  width: 170px;
+  height: 55px;
+  background-color: #ff7069;
 }
 
 span.colored {
-    color: #FF7069;
+  color: #ff7069;
 }
 
 .heroImg {
-    width: 745px;
-    height: 725px;
-    display: flex;
-    position: absolute;
-    right: 5%;
+  width: 745px;
+  height: 725px;
+  display: flex;
+  position: absolute;
+  right: 5%;
 }
 
 .vr {
+  width: 100%;
+}
+
+section.blog {
     width: 100%;
+    height: 90vh;
+    background-color: #ff7069;
+    position: absolute;
 }
