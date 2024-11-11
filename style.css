@@ -15,7 +15,6 @@
 body {
   width: 100%;
   height: 300vh;
-  background-color: palegreen;
   position: relative;
   color: #fff;
   font-family: "Work Sans", sans-serif;
@@ -70,6 +69,13 @@ a {
   font-weight: 500;
 }
 
+.wagmiFont {
+    font-family: "Wagmi";
+    font-size: 24px;
+    font-weight: 400;
+    color: #928a97;
+}
+
 .navbar a:hover {
   cursor: pointer;
   color: white;
@@ -86,7 +92,7 @@ a.active {
 
 .contentWrapper {
     width: 100%;
-    height: 180vh;
+    height: 270vh;
     position: absolute;
     top: 80px;    
 }
@@ -95,13 +101,15 @@ a.active {
   width: 100%;
   height: 90vh;
   background-color: #283c63;
+  position: relative;
 }
 
 button {
   border: none;
   outline: none;
   background-color: transparent;
-  font: inherit;
+  font-family: "Wagmi";
+  font-size: 20px;
   color: #fff;
 }
 
@@ -110,7 +118,7 @@ button {
   height: 490px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 15px;
   position: absolute;
   top: 5%;
   left: 5%;
@@ -142,6 +150,7 @@ span.colored {
   display: flex;
   position: absolute;
   right: 5%;
+  bottom: 0;
 }
 
 .vr {
@@ -152,5 +161,157 @@ section.blog {
     width: 100%;
     height: 90vh;
     background-color: #ff7069;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section article {
+    width: 85%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heading {
+    text-align: center;
+    font-family: "Wagmi";
+    font-size: 72px;
+    color: #283c63;
+}
+
+section.aboutUs {
+    width: 100%;
+    height: 90vh;
+    background-color: #283c63;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutUsText {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+section.aboutUs .heading {
+    color: white;
+}
+
+p.about {
+    color: #928a97;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+.articleSlider {
+    width: 100%;
+    height: 380px;
+    display: flex;
+    gap: 50px;
+}
+
+.articleSlider .cards {
+    flex: auto;
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #928a973a;
+    border-radius: 12px;
+}
+
+.cards:hover {
+    cursor: pointer;
+    border: 1px solid #ff7069;
+}
+
+.cardContent {
+    width: 75%;
+    height: 75%;
+    color: black;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.namePosition {
+   width: fit-content;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 5px;
+}
+
+.name {
+    color: white;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.position {
+    color: black;
+}
+
+.cardContent .desc {
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+button.about {
+    align-self: center;
+    width: 150px;
+    height: 50px;
+    background-color: #ff7069;
+    color: #fff;
+    border-radius: 8px;
+}
+
+button.about:hover {
+    cursor: pointer;
+    background-color: #ff7169d2;
+}
+
+button.about:hover a {
+    color: inherit;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
     position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20vh;
+    background-color: #FFF599;
 }

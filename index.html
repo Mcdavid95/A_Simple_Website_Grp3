@@ -35,7 +35,84 @@
           <img src="./Assets/vr 1.png" class="vr" />
         </div>
       </div>
-      <section class="blog"></section>
+
+      <section class="blog">
+        <article>
+          <h2 class="heading">Blog</h2>
+        </article>
+      </section>
+
+      <section class="aboutUs">
+        <article>
+          <div class="aboutUsText">
+            <h2 class="heading">About Us</h2>
+            <p class="about">
+              We are a team of passionate professionals, committed to delivering
+              high-quality services while ensuring customer satisfaction at
+              every step.
+            </p>
+          </div>
+          <div class="articleSlider">
+            <div class="cards slide-right">
+              <div class="cardContent">
+                <div class="avatar">
+                  <img src="" alt="" />
+                </div>
+                <div class="namePosition">
+                  <h4 class="name wagmiFont">Mark David</h4>
+                  <p class="position wagmiFont">Founder & CEO</p>
+                </div>
+                <p class="desc wagmiFont">
+                  With over 10 years of experience, John ensures that everything
+                  is executed to perfection.
+                </p>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="cardContent">
+                <div class="avatar">
+                  <img src="" alt="" />
+                </div>
+                <div class="namePosition">
+                  <h4 class="name wagmiFont">Von</h4>
+                  <p class="position wagmiFont">Admin</p>
+                </div>
+                <p class="desc wagmiFont">
+                  With over 10 years of experience, John ensures that everything
+                  is executed to perfection.
+                </p>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="cardContent">
+                <div class="avatar">
+                  <img src="" alt="" />
+                </div>
+                <div class="namePosition">
+                  <h4 class="name wagmiFont">Ezra</h4>
+                  <p class="position wagmiFont">Admin</p>
+                </div>
+                <p class="desc wagmiFont">
+                  With over 10 years of experience, John ensures that everything
+                  is executed to perfection.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="about"><a href="about.html">See More</a></button>
+        </article>
+      </section>
     </div>
+
+    <footer></footer>
   </body>
+
+  <script>
+    $(window).scroll(function() {
+  if ($(window).scrollTop() >= $('.section.about').offset().top) {
+    $('.slide-right').addClass('slide-in-animation');
+  }
+});
+
+  </script>
 </html>
