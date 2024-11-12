@@ -70,10 +70,10 @@ a {
 }
 
 .wagmiFont {
-    font-family: "Wagmi";
-    font-size: 24px;
-    font-weight: 400;
-    color: #928a97;
+  font-family: "Wagmi";
+  font-size: 24px;
+  font-weight: 400;
+  color: #928a97;
 }
 
 .navbar a:hover {
@@ -91,10 +91,10 @@ a.active {
 }
 
 .contentWrapper {
-    width: 100%;
-    height: 270vh;
-    position: absolute;
-    top: 80px;    
+  width: 100%;
+  height: 270vh;
+  position: absolute;
+  top: 80px;
 }
 
 .hero {
@@ -158,160 +158,214 @@ span.colored {
 }
 
 section.blog {
-    width: 100%;
-    height: 90vh;
-    background-color: #ff7069;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 90vh;
+  background-color: #ff7069;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 section article {
-    width: 85%;
-    height: 85%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  width: 85%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .heading {
-    text-align: center;
-    font-family: "Wagmi";
-    font-size: 72px;
-    color: #283c63;
+  text-align: center;
+  font-family: "Wagmi";
+  font-size: 72px;
+  color: #283c63;
 }
 
 section.aboutUs {
-    width: 100%;
-    height: 90vh;
-    background-color: #283c63;    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 90vh;
+  background-color: #283c63;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .aboutUsText {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 section.aboutUs .heading {
-    color: white;
+  color: white;
 }
 
 p.about {
-    color: #928a97;
-    font-size: 24px;
-    text-align: center;
-
+  color: #928a97;
+  font-size: 24px;
+  text-align: center;
 }
 
 .articleSlider {
-    width: 100%;
-    height: 380px;
-    display: flex;
-    gap: 50px;
+  width: 100%;
+  height: 380px;
+  display: flex;
+  gap: 50px;
 }
 
 .articleSlider .cards {
-    flex: auto;
-    width: auto;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #928a973a;
-    border-radius: 12px;
+  flex: auto;
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #928a973a;
+  border-radius: 12px;
 }
 
 .cards:hover {
-    cursor: pointer;
-    border: 1px solid #ff7069;
+  cursor: pointer;
+  border: 1px solid #ff7069;
 }
 
 .cardContent {
-    width: 75%;
-    height: 75%;
-    color: black;
-    /* background-color: white; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+  width: 75%;
+  height: 75%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .avatar {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .namePosition {
-   width: fit-content;
-   height: auto;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   gap: 5px;
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
 }
 
 .name {
-    color: white;
-    font-weight: 800;
-    letter-spacing: 2px;
-    font-size: 32px;
-    text-transform: uppercase;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 32px;
+  text-transform: uppercase;
 }
 
 .position {
-    color: black;
+  color: black;
 }
 
 .cardContent .desc {
-    width: 100%;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 button.about {
-    align-self: center;
-    width: 150px;
-    height: 50px;
-    background-color: #ff7069;
-    color: #fff;
-    border-radius: 8px;
+  align-self: center;
+  width: 150px;
+  height: 50px;
+  background-color: #ff7069;
+  color: #fff;
+  border-radius: 8px;
 }
 
 button.about:hover {
-    cursor: pointer;
-    background-color: #ff7169d2;
+  cursor: pointer;
+  background-color: #ff7169d2;
 }
 
 button.about:hover a {
-    color: inherit;
-
+  color: inherit;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 20vh;
-    background-color: #FFF599;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20vh;
+  background-color: #fff599;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content .left {
+  width: 385px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left .logo {
+  margin-left: 0px;
+  width: 150px;
+  height: 60px;
+  background-image: url(./Assets/wagmiFooter.png);
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: center;
+}
+
+.footer-content .left .links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content .left .links a {
+  font-family: inherit;
+  font-size: 18px;
+}
+
+.links a:hover {
+  cursor: pointer;
+  color: #ff7069;
+}
+
+.footer-content .right {
+  width: 275px;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.footer-content .right .socials {
+  width: 145px;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials img:hover {
+  cursor: pointer;
+}
+
+.footer-content .right p {
+  width: auto;
+  color: #283c63;
+  font-family: inherit;
+  font-size: 14px;
 }
