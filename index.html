@@ -7,6 +7,9 @@
     <title>HomePage</title>
   </head>
   <body>
+    <div class="loaderWrap">
+      <div class="loader"></div>
+    </div>
     <header>
       <nav>
         <div class="logo"></div>
@@ -15,6 +18,9 @@
           <a href="#">Blog</a>
           <a href="#">About Us</a>
           <a href="#">Contact Us</a>
+        </div>
+        <div class="hambuger">
+          <img src="./Assets/hambuger.svg" alt="" />
         </div>
       </nav>
     </header>
@@ -105,7 +111,7 @@
     </div>
 
     <footer>
-      <div class="footer-content">
+      <!-- <div class="footer-content">
         <div class="left">
           <div class="logo">
           </div>
@@ -125,9 +131,30 @@
             <img src="./Assets/icon-pinterest.svg" alt="" />
             <img src="./Assets/icon-instagram.svg" alt="" />
           </div>
-          <p>© 2021 Loopstudios. All rights reserved.</p>
+          <p>© 2024 WAGMI. All rights reserved.</p>
         </div>
-      </div>
+      </div> -->
     </footer>
+
+    <script>
+      // Get the loader div element
+      const loader = document.getElementsByClassName("loaderWrap");
+
+      // Set the display property to "block" to show the loader
+      loader.style.display = "block";
+
+      // Wait for 5 seconds (5000 milliseconds)
+      setTimeout(() => {
+        // Hide the loader by changing display to "none"
+        loader.style.display = "none";
+
+        // Display your website content
+        document.getElementsByClassName("contentWrapper").style.display =
+          "block";
+      }, 5000);
+
+      // Additional code to ensure the website content is hidden initially
+      document.getElementsByClassName("contentWrapper").style.display = "none";
+    </script>
   </body>
 </html>

@@ -28,6 +28,10 @@ header {
   z-index: 2;
 }
 
+.hambuger {
+  display: none;
+}
+
 nav {
   width: 100%;
   height: 100%;
@@ -105,12 +109,13 @@ a.active {
 }
 
 button {
+  border-radius: 10px;
   border: none;
   outline: none;
   background-color: transparent;
   font-family: "Wagmi";
-  font-size: 20px;
-  color: #fff;
+  font-size: 24px;
+  color: #283c63;
 }
 
 .heroArticle {
@@ -120,7 +125,7 @@ button {
   flex-direction: column;
   gap: 15px;
   position: absolute;
-  top: 5%;
+  top: 20%;
   left: 5%;
 }
 
@@ -135,9 +140,15 @@ button {
 }
 
 .heroBtn {
+  cursor: pointer;
   width: 170px;
   height: 55px;
   background-color: #ff7069;
+}
+
+.heroBtn:hover {
+  color: #fff;
+  font-weight: 700;
 }
 
 span.colored {
@@ -290,6 +301,7 @@ button.about:hover {
 
 button.about:hover a {
   color: inherit;
+  font-weight: 700;
 }
 
 footer {
@@ -368,4 +380,165 @@ footer {
   color: #283c63;
   font-family: inherit;
   font-size: 14px;
+}
+
+@media screen and (max-width: 480px) {
+  .hambuger {
+    display: block;
+    margin-right: 30px;
+  }
+
+.loaderWrap {
+  background-color: #ff7069;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  display: none;
+}
+
+  .loader {
+    width: 44.8px;
+    height: 44.8px;
+    color: #283c63;
+    position: relative;
+    background: radial-gradient(11.2px,currentColor 94%,#0000);
+  }
+  
+  .loader:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: radial-gradient(10.08px at bottom right,#0000 94%,currentColor) top    left,
+            radial-gradient(10.08px at bottom left ,#0000 94%,currentColor) top    right,
+            radial-gradient(10.08px at top    right,#0000 94%,currentColor) bottom left,
+            radial-gradient(10.08px at top    left ,#0000 94%,currentColor) bottom right;
+    background-size: 22.4px 22.4px;
+    background-repeat: no-repeat;
+    animation: loader 1.5s infinite cubic-bezier(0.3,1,0,1);
+  }
+  
+  @keyframes loader {
+    33% {
+      inset: -11.2px;
+      transform: rotate(0deg);
+    }
+  
+    66% {
+      inset: -11.2px;
+      transform: rotate(90deg);
+    }
+  
+    100% {
+      inset: 0;
+      transform: rotate(90deg);
+    }
+  }
+
+  body {
+    height: 3145px;
+  }
+
+  header {
+    width: 100%;
+    position: sticky;
+  }
+
+  .logo {
+    margin-left: 15px;
+    width: 100px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .contentWrapper {
+    top: 70px;
+  }
+
+  .heading {
+    font-size: 55px;
+  }
+
+  .hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 25px;
+    justify-content: center;
+  }
+
+  .heroArticle {
+    width: 100%;
+    height: 45vh;
+    position: initial;
+  }
+
+  .heroArticle h1 {
+    font-size: 42px;
+  }
+
+  .heroArticle p {
+    width: 100%;
+    font-size: 22px;
+  }
+
+  .heroImg {
+    width: 100%;
+    height: 45vh;
+    position: initial;
+  }
+
+  section.aboutUs {
+    height: 1400px;
+  }
+
+p.about {
+  font-size: 22px;
+}
+
+  .aboutUsText {
+    gap: 15px;
+  }
+
+  section.aboutUs article {
+    height: fit-content;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .articleSlider {
+    width: 70%;
+    height: fit-content;
+    gap: 25px;
+    flex-direction: column;
+  }
+
+  .articleSlider .cards {
+    height: 300px;
+  }
+  .name {
+    font-size: 24px;
+  }
+
+  .position {
+    font-size: 20px;
+  }
+
+.cardContent {
+  height: 90%;
+  justify-content: space-around;
+}
+
+  .cardContent .desc {
+    font-size: 18px;
+  }
+
+  footer {
+    height: 300px;
+  }
 }
