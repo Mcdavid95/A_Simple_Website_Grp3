@@ -1,13 +1,10 @@
 function handleSubmit(event) {
-    // Prevent the form from submitting normally
     event.preventDefault();
 
-    // Get the form values
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
 
-    // Check if any field is empty
     if (!name || !email || !message) {
         alert("Please fill in all the fields.");
         return false;
@@ -19,15 +16,12 @@ function handleSubmit(event) {
         return false;
     }
 
-    // Show success message
     const successMessage = document.getElementById("successMessage");
     successMessage.style.display = "block";
 
-    // Hide success message after 5 seconds
     setTimeout(function() {
         successMessage.style.display = "none";
     }, 5000);
 
-    // Clear form fields
     document.getElementById("contactForm").reset();
 }
