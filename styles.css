@@ -39,6 +39,18 @@ h2:hover {
     margin-bottom: 15px;
 }
 
+#name:hover {
+    border: 2px solid #ff7069;
+}
+
+#email:hover {
+    border: 2px solid #ff7069;
+}
+
+#message:hover {
+    border: 2px solid #ff7069;
+}
+
 label {
     display: block;
     font-size: 14px;
