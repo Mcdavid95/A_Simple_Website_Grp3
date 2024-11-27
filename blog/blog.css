@@ -14,11 +14,39 @@
 body{
     background-color: rgb(253, 244, 234);
     font-family: "Work Sans", sans-serif;
+    padding: 0 10%;
+    overflow-x: hidden;
 }
 
+.bloghead{
+    display: flex;
+    max-width: 100%;
+    padding: 0 2%;
+    /* padding-bottom: 3%; */
+    margin-bottom: 3%;
+    margin-right: 2%;
+    border-bottom: 1px solid #ccc;
+}
+.bloghead img{
+    width: 20%;
+    margin-top: 2%;
+  
+}
+.bloghead img:hover {
+    cursor: pointer;
+}
+.bloghead span h1 {
+    color: #283C63;
+    width: 100%;
+    
+    margin-left: -150%;
+    margin-top: 15%;
+    font-size: 2.5vw;
+    font-weight: 600;
+    
+}
 
-
-.featured{
+.featured {
     /* border: 2px solid red; */
     width: 100%;
     border-radius: 20px;
@@ -32,6 +60,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: -20px;
     
 }
 .featured::after{
@@ -44,89 +73,109 @@ body{
     height: 100%;
     border-radius: 20px;
 }
- .read-more {
+ .featured .read-more a{
     position: absolute;
     right: 0;
     bottom: 0;
-    margin-right: 3%;
-    margin-bottom: 7.5%;
+    margin-right: 6%;
+    margin-bottom: 9%;
     font-size: 4vw;
     font-weight: 100;
     transition: transform 0.5s ease;
-    z-index: 15;
+    z-index: 20;
     color: #FF7069;
+    
  }
- .read-more:hover {
+ .featured .read-more a:hover {
     color: #fa463d;
     cursor: pointer;
     transform: translateX(5px);
  }
+
 .featured .text-overlay{
+    
+    margin-bottom: 1%;
     position: absolute;
     color: white;
     bottom: 0;
-    padding: 3%;
+    padding: 2% 7% 2% 2%;
     z-index: 15;
 }
-.text-overlay h2 {
+
+.featured .text-overlay h2 {
     margin-top: 0;
     margin-bottom: 0.5vh;
     font-weight: 600;
     
-    font-size: 1.5vw;
-    width: 100%;
 }
-.text-overlay h5 {
-    font-size: 1vw;
+.featured h5 {
+    font-size: 2vw;
     margin-top: 0;
     margin-bottom: 0.5vh;
     color: #FF7069;
-}
-.text-overlay p{
-    width: 100%;
-    font-size: 1vw;
-    font-weight: 300;
 
+    border: 1px dashed red;
+    width: 15%;
+    padding: 0 2%;
 }
-/* .text-overlay p{
-    font-weight: 200;
-    width: 70%;
+.featured .text-overlay p{
+    width: 100%;
+    font-size: 1.5vw;
+    font-weight: 300;
     margin-top: 0;
-} */
+}
+
 .blogposts{
     padding: 2%;
     margin: 2%;
     /* border: 2px solid blue; */
     display: flex;
+    
     flex-wrap: wrap;
+    gap: 30px;
     /* width: 100%; */
-
-    
-    
 }
 .blog{
-    /* border: 2px solid green; */
-    margin: 2%;
-    width: 30%;
-    /* height: 40vh; */
-    flex: 25%;
+    flex: 1 1 calc(33.33% - 30px);
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Optional: Visualize items */
+    max-width: calc(33.33% - 30px);
+    border-radius: 10px;
+    padding: 1%;
 }
+/* .blog .image {
+    position: relative;
+    display: inline-block;
+} */
 .blog .image img{
     width: 100%;
     height: 35vh;
     padding-bottom: 5%;
     border-radius: 10px;
-    
+
 }
-.blog a {
+.blog .read-more-button {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.blog .read-more-button a {
     text-decoration: none;
-    color: white;
+    color: #000;
     font-size: 2vw;
-    border: 2px solid #fa463d;
-    background-color: #ff71697e;
-    border-radius: 50px;
-    padding: 1%;
     
+    /* border: 2px solid #fa463d;
+    background-color: #ff71697e; */
+    border: 2px solid #00000062;
+    background-color: #beb0b0;
+    font-weight: 600; 
+    padding: 1vw 1.5vw;
+    border-radius: 50%;
+   
+}
+.blog .image:hover .read-more-button {
+    opacity: 1;
+
+    cursor: pointer;
 }
 .blog{
     position: relative;
@@ -138,10 +187,145 @@ body{
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
-    left: 75%;
+    left: 85%;
     z-index: 15;
     width: 100%;
 }
+.blog .text-overlay h2 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+.blog .text-overlay p {
+    font-size: 0.8rem;
+}
 
 
+/* Smaller screens */
+@media (max-width: 600px){
+    
+    body {
+        padding: 1% 2%;
+        
+    }
+    .bloghead{
+        padding: 0;
+    }
+    
+    .bloghead span h1 {
+        width: 34vw;
+        margin-top: 16%;
+        margin-left: 10%;
+        font-size: 4vw;
+        
+    }
+    .bloghead img{
+        width: 13vw;
+    }
 
+    .featured {
+        height: 50vh;
+        
+    }
+    .featured .text-overlay {
+        padding: 0 10% 0 5%;
+        bottom: 3vh;
+        
+     }
+     .featured .read-more a{
+        font-size: 6vw;
+        bottom: 5%;
+        right: 5%;
+     }
+    
+    .featured .text-overlay h2 {
+        
+        font-weight: 600;
+        font-size: 2.5vw;
+        
+    }
+    .featured h5 {
+        font-size: 2.5vw;
+        width: 17%;
+        
+    }
+    .featured .text-overlay p{
+        width: 100%;
+        font-size: 2.2vw;
+        font-weight: 400;
+    }
+
+    .blogposts{
+        flex-direction: column;  
+    }
+    .blog{
+        flex: 1 1 calc(100% - 10px);
+        max-width: calc(100% - 10px);
+    
+    }
+    .blog .read-more-button{
+        opacity: 1;;
+    }
+    .blog .read-more-button a {
+        color: black;
+        font-size: 3vw;
+        padding: 3% 4%;
+        
+    }
+    .blog span{
+       left:90%;
+    }
+}
+
+@media (min-width: 620px) and (max-width: 1024px) {
+    
+    .bloghead span h1 {
+        width: 34vw;
+        margin-top: 16%;
+        margin-left: 10%;
+        font-size: 4vw;
+        
+    }
+    
+     .featured .read-more a{
+        font-size: 6vw;
+     }
+
+     .featured .text-overlay {
+        padding: 0 14% 2% 4%;
+     }
+    .featured .text-overlay h2 {
+        
+        font-weight: 600;
+        font-size: 3vw;
+        
+    }
+    .featured h5 {
+        font-size: 3vw;
+        width: 17%;
+        
+    }
+    .featured .text-overlay p{
+        width: 100%;
+        font-size: 2vw;
+        font-weight: 400;
+    }
+
+    .blogposts{
+        flex-direction: column;  
+    }
+    .blog{
+        flex: 1 1 calc(100% - 10px);
+        max-width: calc(100% - 10px);
+    
+    }
+
+    .blog .read-more-button a {
+        color: black;
+        font-size: 3vw;
+        padding: 3%;
+        
+    }
+    .blog span{
+       left: 85%;
+    }
+}
