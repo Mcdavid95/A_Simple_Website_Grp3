@@ -199,6 +199,22 @@ body{
     font-size: 0.8rem;
 }
 
+footer {
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    padding: 1%;
+    border-top: 1px solid #ccc;
+}
+footer p {
+    padding: 0 1%;
+}
+footer a {
+    text-decoration: none;
+    color: #fa463d;
+
+}
+
 
 /* Smaller screens */
 @media (max-width: 600px){
@@ -274,6 +290,24 @@ body{
     .blog span{
        left:90%;
     }
+
+    footer {
+        display: flex;
+        align-items:center;
+        justify-content: flex-end;
+        padding: 1%;
+        border-top: 1px solid #ccc;
+    }
+    footer p {
+        padding: 0 1%;
+        font-size: 2.5vw;
+    }
+    footer a {
+        text-decoration: none;
+        color: #fa463d;
+    
+    }
+    
 }
 
 @media (min-width: 620px) and (max-width: 1024px) {

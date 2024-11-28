@@ -3,6 +3,7 @@ AOS.init({
     duration: 1000,
     once: false,
 })
+
 const urlParam = new URLSearchParams(window.location.search)
 const postId = urlParam.get('id')
 console.log('postId:', postId)
