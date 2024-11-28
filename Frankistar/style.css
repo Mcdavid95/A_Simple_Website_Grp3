@@ -1,0 +1,570 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "Wagmi";
+  src: url("lightstories-webfont.woff2") format("woff2");
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 300vh;
+  position: relative;
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+}
+
+header {
+  height: 10vh;
+  width: inherit;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.hambuger {
+  display: none;
+}
+
+nav {
+  width: 100%;
+  height: 100%;
+  background-image: url(./Assets/navBg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 100px;
+  width: 150px;
+  height: 100%;
+  background-image: url(./Assets/WAGMI-Logo.jpg);
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: center;
+}
+
+.navbar {
+  width: 50%;
+  height: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbar a {
+  z-index: 3;
+}
+
+a {
+  text-decoration: none;
+  color: #283c63;
+  font-family: "Wagmi";
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.wagmiFont {
+  font-family: "Wagmi";
+  font-size: 24px;
+  font-weight: 400;
+  color: #928a97;
+}
+
+.navbar a:hover {
+  cursor: pointer;
+  color: white;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+a.active {
+  color: black;
+  font-style: italic;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.contentWrapper {
+  width: 100%;
+  height: 270vh;
+  position: absolute;
+  top: 80px;
+}
+
+.hero {
+  width: 100%;
+  height: 90vh;
+  background-color: #283c63;
+  position: relative;
+}
+
+button {
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: "Wagmi";
+  font-size: 24px;
+  color: #283c63;
+}
+
+.heroArticle {
+  width: 770px;
+  height: 490px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+
+.heroArticle h1 {
+  font-size: 96px;
+}
+
+.heroArticle p {
+  width: 540px;
+  font-size: 24px;
+  color: #928a97;
+}
+
+.heroBtn {
+  cursor: pointer;
+  width: 170px;
+  height: 55px;
+  background-color: #ff7069;
+}
+
+.heroBtn:hover {
+  color: #fff;
+  font-weight: 700;
+}
+
+span.colored {
+  color: #ff7069;
+}
+
+.heroImg {
+  width: 745px;
+  height: 725px;
+  display: flex;
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+}
+
+.vr {
+  width: 100%;
+}
+
+section.blog {
+  width: 100%;
+  height: 90vh;
+  background-color: #ff7069;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section article {
+  width: 85%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.heading {
+  text-align: center;
+  font-family: "Wagmi";
+  font-size: 72px;
+  color: #283c63;
+}
+
+section.aboutUs {
+  width: 100%;
+  height: 90vh;
+  background-color: #283c63;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutUsText {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+section.aboutUs .heading {
+  color: white;
+}
+
+p.about {
+  color: #928a97;
+  font-size: 24px;
+  text-align: center;
+}
+
+.articleSlider {
+  width: 100%;
+  height: 380px;
+  display: flex;
+  gap: 50px;
+}
+
+.articleSlider .cards {
+  flex: auto;
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #928a973a;
+  border-radius: 12px;
+}
+
+.cards:hover {
+  cursor: pointer;
+  border: 1px solid #ff7069;
+}
+
+.cardContent {
+  width: 75%;
+  height: 75%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.namePosition {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.name {
+  color: white;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.position {
+  color: black;
+}
+
+.cardContent .desc {
+  width: 100%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+button.about {
+  align-self: center;
+  width: 150px;
+  height: 50px;
+  background-color: #ff7069;
+  color: #fff;
+  border-radius: 8px;
+}
+
+button.about:hover {
+  cursor: pointer;
+  background-color: #ff7169d2;
+}
+
+button.about:hover a {
+  color: inherit;
+  font-weight: 700;
+}
+
+.slide-right {
+  animation: slide-right 1500ms ease-in;
+}
+
+.slide-left {
+  animation: slide-left 1500ms ease-in;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20vh;
+  background-color: #fff599;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content .left {
+  width: 385px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left .logo {
+  margin-left: 0px;
+  width: 150px;
+  height: 60px;
+  background-image: url(./Assets/wagmiFooter.png);
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: center;
+}
+
+.footer-content .left .links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content .left .links a {
+  font-family: inherit;
+  font-size: 18px;
+}
+
+.links a:hover {
+  cursor: pointer;
+  color: #ff7069;
+}
+
+.footer-content .right {
+  width: 275px;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.footer-content .right .socials {
+  width: 145px;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials img:hover {
+  cursor: pointer;
+}
+
+.footer-content .right p {
+  width: auto;
+  color: #283c63;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 480px) {
+  .hambuger {
+    display: block;
+    margin-right: 30px;
+  }
+
+.loaderWrap {
+  background-color: #ff7069;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  display: none;
+}
+
+  .loader {
+    width: 44.8px;
+    height: 44.8px;
+    color: #283c63;
+    position: relative;
+    background: radial-gradient(11.2px,currentColor 94%,#0000);
+  }
+  
+  .loader:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: radial-gradient(10.08px at bottom right,#0000 94%,currentColor) top    left,
+            radial-gradient(10.08px at bottom left ,#0000 94%,currentColor) top    right,
+            radial-gradient(10.08px at top    right,#0000 94%,currentColor) bottom left,
+            radial-gradient(10.08px at top    left ,#0000 94%,currentColor) bottom right;
+    background-size: 22.4px 22.4px;
+    background-repeat: no-repeat;
+    animation: loader 1.5s infinite cubic-bezier(0.3,1,0,1);
+  }
+  
+  @keyframes loader {
+    33% {
+      inset: -11.2px;
+      transform: rotate(0deg);
+    }
+  
+    66% {
+      inset: -11.2px;
+      transform: rotate(90deg);
+    }
+  
+    100% {
+      inset: 0;
+      transform: rotate(90deg);
+    }
+  }
+
+  body {
+    height: 3145px;
+  }
+
+  header {
+    width: 100%;
+    position: sticky;
+  }
+
+  .logo {
+    margin-left: 15px;
+    width: 100px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .contentWrapper {
+    top: 70px;
+  }
+
+  .heading {
+    font-size: 55px;
+  }
+
+  .hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 25px;
+    justify-content: center;
+  }
+
+  .heroArticle {
+    width: 100%;
+    height: 45vh;
+    position: initial;
+  }
+
+  .heroArticle h1 {
+    font-size: 42px;
+  }
+
+  .heroArticle p {
+    width: 100%;
+    font-size: 22px;
+  }
+
+  .heroImg {
+    width: 100%;
+    height: 45vh;
+    position: initial;
+  }
+
+  section.aboutUs {
+    height: 1400px;
+  }
+
+p.about {
+  font-size: 22px;
+}
+
+  .aboutUsText {
+    gap: 15px;
+  }
+
+  section.aboutUs article {
+    height: fit-content;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .articleSlider {
+    width: 70%;
+    height: fit-content;
+    gap: 25px;
+    flex-direction: column;
+  }
+
+  .articleSlider .cards {
+    height: 300px;
+  }
+  .name {
+    font-size: 24px;
+  }
+
+  .position {
+    font-size: 20px;
+  }
+
+.cardContent {
+  height: 90%;
+  justify-content: space-around;
+}
+
+  .cardContent .desc {
+    font-size: 18px;
+  }
+
+  footer {
+    height: 300px;
+  }
+}
