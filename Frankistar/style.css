@@ -304,6 +304,32 @@ button.about:hover a {
   font-weight: 700;
 }
 
+.slide-right {
+  animation: slide-right 1500ms ease-in;
+}
+
+.slide-left {
+  animation: slide-left 1500ms ease-in;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 footer {
   position: absolute;
   bottom: 0;
