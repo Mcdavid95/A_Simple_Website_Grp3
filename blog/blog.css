@@ -1,6 +1,7 @@
 /* Color #283C63 */
 /* secondary color #FF7069*/
 
+
 .work-sans-font {
     /* <uniquifier>: Use a unique and descriptive class name
     <weight>: Use a value from 100 to 900 */
@@ -212,7 +213,7 @@ footer p {
 footer a {
     text-decoration: none;
     color: #fa463d;
-
+    
 }
 
 
