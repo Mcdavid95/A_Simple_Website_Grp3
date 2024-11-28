@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>HomePage</title>
   </head>
@@ -15,9 +16,9 @@
         <div class="logo"></div>
         <div class="navbar">
           <a href="index.html" class="active">Home</a>
-          <a href="blog.html">Blog</a>
+          <a href="../blog/blog.html">Blog</a>
           <a href="#">About Us</a>
-          <a href="#">Contact Us</a>
+          <a href="../contactus/index.html">Contact Us</a>
         </div>
         <div class="hambuger">
           <img src="./Assets/hambuger.svg" alt="" />
@@ -59,7 +60,7 @@
             </p>
           </div>
           <div class="articleSlider">
-            <div class="cards slide-right">
+            <div class="cards">
               <div class="cardContent">
                 <div class="avatar">
                   <img src="" alt="" />
@@ -136,25 +137,11 @@
       </div> -->
     </footer>
 
-    <script>
-      // Get the loader div element
-      const loader = document.getElementsByClassName("loaderWrap");
-
-      // Set the display property to "block" to show the loader
-      loader.style.display = "block";
-
-      // Wait for 5 seconds (5000 milliseconds)
-      setTimeout(() => {
-        // Hide the loader by changing display to "none"
-        loader.style.display = "none";
-
-        // Display your website content
-        document.getElementsByClassName("contentWrapper").style.display =
-          "block";
-      }, 5000);
-
-      // Additional code to ensure the website content is hidden initially
-      document.getElementsByClassName("contentWrapper").style.display = "none";
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+            AOS.init({
+          duration: 1000, // Animation duration in ms
+          once: true, // Whether animation should happen only once while scrolling down
+      });
     </script>
   </body>
 </html>
