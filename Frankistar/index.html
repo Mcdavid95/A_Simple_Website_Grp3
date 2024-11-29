@@ -59,11 +59,16 @@
       <section class="blog">
         <article>
           <h2 class="heading">Blog</h2>
-          <div class="blog_Slider">
+          <div class="featured">
+            <p>Explore insightful tech articles, project showcases, and tutorials crafted 
+              by our community to inspire and empower your tech journey.</p>
+
+          </div>
+          <!-- <div class="blog_Slider">
             <div class="cardAbout"  data-aos="fade-right"></div>
             <div class="cardAbout" data-aos="fade-down"></div>
             <div class="cardAbout"  data-aos="fade-left"></div>
-          </div>
+          </div> -->
         </article>
       </section>
 
@@ -115,16 +120,16 @@
     </div>
 
     <footer>
-      <!-- <div class="footer-content">
+      <div class="footer-content">
         <div class="left">
           <div class="logo">
           </div>
 
           <div class="links">
             <a href="index.html">HomePage</a>
-            <a href="#">Blog</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
+            <a href="../blog/blog.html">Blog</a>
+            <a href="../about/about.html">About Us</a>
+            <a href="../contactus/index.html">Contact Us</a>
           </div>
         </div>
 
@@ -137,28 +142,32 @@
           </div>
           <p>© 2024 WAGMI. All rights reserved.</p>
         </div>
-      </div> -->
+      </div>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 2000, // Animation duration in ms
-        once: false, // Whether animation should happen only once while scrolling down
-      });
+    <script src="./index.js">
+  //     AOS.init({
+  //   duration: 2000, // Animation duration in ms
+  //   once: false, // Whether animation should happen only once while scrolling down
+  // });
 
-      function toggleMenu() {
-        var menuIcon = document.getElementById("menu-icon");
-        var menu = document.getElementsByClassName("menu")[0];
 
-        if (menu.style.display === "none") {
-          menu.style.display = "block";
-          menuIcon.src = "../Frankistar/Assets/Close.svg";
-        } else {
-          menu.style.display = "none";
-          menuIcon.src = "../Frankistar/Assets/hambuger.svg";
-        }
-      }
+  //     function toggleMenu() {
+  //   var menuIcon = document.getElementById("menu-icon");
+  //   var menu = document.getElementsByClassName("menu")[0];
+
+  //   if (menu.style.display === "none") {
+  //     menu.style.display = "block";
+  //     menuIcon.src = "../Frankistar/Assets/Close.svg";
+  //   } else {
+  //     menu.style.display = "none";
+  //     menuIcon.src = "../Frankistar/Assets/hambuger.svg";
+  //   }
+  // }
+
+
     </script>
+    
   </body>
 </html>

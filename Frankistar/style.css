@@ -93,12 +93,15 @@ a.active {
   font-size: 26px;
   font-weight: 700;
 }
+.menu{
+  display: none;
+}
 
 .contentWrapper {
   width: 100%;
   height: 270vh;
   position: absolute;
-  top: 80px;
+  top: 68px;
 }
 
 .hero {
@@ -106,6 +109,7 @@ a.active {
   height: 90vh;
   background-color: #283c63;
   position: relative;
+  
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -224,7 +228,7 @@ p.about {
 
 .articleSlider {
   width: 100%;
-  height: 380px;
+  /* height: 380px; */
   display: flex;
   gap: 50px;
 }
@@ -466,6 +470,15 @@ footer {
 .blog_Slider {
   flex-direction: column;
 }
+.featured{
+  
+}
+.featured p{
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 20px;
+  box-shadow: 10 10 10 10 #ff7069;
+}
 
   section.aboutUs {
     height: 1400px;
@@ -487,12 +500,24 @@ footer {
 
   .articleSlider {
     width: 70%;
-    height: fit-content;
+    /* height: fit-content; */
     gap: 25px;
     flex-direction: column;
   }
-
-  footer {
-    height: 300px;
+  footer { 
+    height: 100px;
+  } 
+  
+  
+  .left .logo {
+    display: none;
   }
+  
+  
+  .footer-content .right {
+    display: none;
+  }
+  
+ 
+  
 }

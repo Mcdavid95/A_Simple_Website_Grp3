@@ -52,7 +52,7 @@ body{
     width: 100%;
     border-radius: 20px;
     height: 80vh;
-    background-image: url(./images/wagmi.jpg);
+    /* background-image: url(./images/wagmi.jpg); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
