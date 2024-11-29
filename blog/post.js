@@ -2,6 +2,7 @@
 AOS.init({
     duration: 1000,
     once: false,
+    offset: 300,
 })
 
 const urlParam = new URLSearchParams(window.location.search)

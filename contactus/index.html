@@ -11,23 +11,44 @@
     <header>
       <nav>
         <div class="logo" data-aos="fade-right"></div>
+
         <div class="navbar" data-aos="fade-left">
           <a href="../Frankistar/index.html">Home</a>
           <a href="../blog/blog.html">Blog</a>
           <a href="#">About Us</a>
           <a href="../contactus/index.html" class="active">Contact Us</a>
         </div>
+
         <div class="hambuger">
-          <img src="./Assets/hambuger.svg" alt="" />
+          <img
+            id="menu-icon"
+            src="../Frankistar/Assets/hambuger.svg"
+            alt="hambuger"
+            onclick="toggleMenu()"
+          />
         </div>
       </nav>
     </header>
 
-    <div class="contact-container" data-aos="zoom-out"
-    data-aos-easing="ease-out-cubic"
-    data-aos-duration="2000">
+    <div class="menu">
+      <div class="menu-lists">
+        <p>00 <a href="../Frankistar/index.html">HomePage</a></p>
+        <p>01 <a href="../blog/blog.html">Blog</a></p>
+        <p>02 <a href="../about/about.html">About Us</a></p>
+        <p class="active">
+          03 <a href="../contactus/index.html">Contact Us</a>
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="contact-container"
+      data-aos="zoom-out"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"
+    >
       <h2 class="wagmiFont" data-aos="fade-left">Contact Us</h2>
-      <form id="contactForm" onsubmit="return handleSubmit(event)" >
+      <form id="contactForm" onsubmit="return handleSubmit(event)">
         <div class="form-group" data-aos="fade-left">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required />
@@ -58,6 +79,19 @@
         duration: 2000, // Animation duration in ms
         once: false, // Whether animation should happen only once while scrolling down
       });
+
+      function toggleMenu() {
+        var menuIcon = document.getElementById("menu-icon");
+        var menu = document.getElementsByClassName("menu")[0];
+
+        if (menu.style.display === "none") {
+          menu.style.display = "block";
+          menuIcon.src = "../Frankistar/Assets/Close.svg";
+        } else {
+          menu.style.display = "none";
+          menuIcon.src = "../Frankistar/Assets/hambuger.svg";
+        }
+      }
     </script>
   </body>
 </html>
