@@ -2,6 +2,7 @@
 AOS.init({
     duration: 1000,
     once: false,
+    offset: 300,
 })
 
 const url = "https://public-api.wordpress.com/wp/v2/sites/bo1atit07.wordpress.com/posts";

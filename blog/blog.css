@@ -1,6 +1,7 @@
 /* Color #283C63 */
 /* secondary color #FF7069*/
 
+
 .work-sans-font {
     /* <uniquifier>: Use a unique and descriptive class name
     <weight>: Use a value from 100 to 900 */
@@ -65,7 +66,7 @@ body{
 }
 .featured::after{
     content: '';
-    background-color:  rgba(66, 96, 155, 0.5);
+    background-color: rgba(66, 96, 155, 0.5);
     position: absolute;
     top: 0;
     left: 0;
@@ -212,7 +213,7 @@ footer p {
 footer a {
     text-decoration: none;
     color: #fa463d;
-
+    
 }
 
 
