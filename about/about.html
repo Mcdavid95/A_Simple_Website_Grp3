@@ -6,65 +6,105 @@
     <title>AboutWagmi</title>
 
     <link rel="stylesheet" href="about.css" />
+
+     <!-- AOS CSS -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
 </head>
 <body>
     <header>
         <nav>
-          <div class="logo"></div>
+          <div class="logo" data-aos="zoom-in"></div>
           <div class="navbar">
-            <a href="index.html" class="active">Home</a>
-            <a href="blog.html">Blog</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
+            <a href="../Frankistar/index.html" class="active" data-aos="fade-down-right">Home</a>
+            <a href="../blog/blog.html" data-aos="fade-down-right">Blog</a>
+            <a href="./about.html" data-aos="fade-down-right">About Us</a>
+            <a href="../contactus/index.html" data-aos="fade-down-right">Contact Us</a>
           </div>
           <div class="hambuger">
-            <img src="./Assets/hambuger.svg" alt="" />
+            <img src="./images/hambuger.svg" alt="" />
           </div>
         </nav>
     </header>
 
     <section class="about-hero">
         <div class="text-overlay">
-            <h1>About WAGMI's Journey</h1>
-            <p>Lorem ipsum dolor </p>
+            <h1 data-aos="fade-down-left">About WAGMI</h1>
+            <!-- <p>WAGMI is a community for tech enthusiasts at all levels, 
+                from curious beginners to seasoned professionals
+                 with the idea of fostering open discussions, 
+                 sharing knowledge, and promoting skill development
+            </p> -->
+            <p data-aos="fade-up-right"><i>WAGMI</i> stands for "We're All Gonna Make It", 
+                reflecting our commitment to mutual success.</p>
         </div>
 
     </section>
 
-    <section class="team">
-        <div class="von">
-            <h3>Name</h3>
-            <h4>TItle</h4>
-            <p>short description of their experience</p>
+    <section class="teams-section">
+        <div class="aboutteam">
+            <h1 data-aos="fade-left">About Us</h1>
+            <p data-aos="fade-right">We are a community of passionate tech enthusiasts,dedicated to empowering aspiring 
+            developers by fostering skill growth, collaboration, and mentorship in a 
+            supportive and inclusive environment.
+        </p>
         </div>
+        
+        <div class="teams">
+            <div class="team" data-aos="fade-right">
+                <img src="./images/admin.png" alt="admin image">
+                <h3>VON</h3>
+                <p>Founder & CEO</p>
+                <p> As the founder of WAGMI and a frontend developer, 
+                    VON fosters creativity and collaboration to help 
+                    members grow.</p>
+            </div>
 
-        <div class="von">
-            <h3>Name</h3>
-            <h4>TItle</h4>
-            <p>short description of their experience</p>
-        </div>
+            <div class="team" data-aos="fade-up">
+                <img src="./images/admin.png" alt="admin image">
+                <h3>McDavid</h3>
+                <p>Admin</p>
+                <p>As a skilled backend software developer,
+                    McDavid guides members in building robust and 
+                    scalable applications.</p>
+            </div>
 
-        <div class="von">
-            <h3>Name</h3>
-            <h4>TItle</h4>
-            <p>short description of their experience</p>
+            <div class="team" data-aos="fade-left">
+                <img src="./images/admin.png" alt="admin image">
+                <h3>Prosper</h3>
+                <p>Admin</p>
+                <p>Prosper, a talented frontend developer, helps members 
+                    enhance their design and coding skills 
+                    for user-friendly interfaces.</p>
+            </div>
         </div>
 
     </section>
 
     <section class="mission-vision">
-        <h1>Our Value</h1>
-        <p>Write short text about the values of the group</p>
-
-        <div class="mission">
-            <h2>Mission</h2>
-            <p>Write short text on the mission of the group</p>
+        <div class="values">
+            <h1 data-aos="zoom-in">Our Values</h1>
+            <p data-aos="zoom-out">At WAGMI, we value collaboration, supportiveness, 
+                growth, transparency, and playfulness, fostering a 
+                community where teamwork, creativity, 
+                and open communication drive innovation and personal development.</p>
         </div>
+        
+        <div class="mission-flex">
+            <div class="mission" data-aos="flip-right">
+                <h2>Mission</h2>
+                <p>We aim to help aspiring developers by providing a 
+                    supportive platform where they can collaborate, seek guidance, 
+                     and refine their skills. 
+                    we help individuals thrive in their tech journeys without the barriers of bureaucracy</p>
+            </div>
 
-        <div class="vision">
-            <div class="mission">
+            <div class="vision" data-aos="flip-left">
                 <h2>Vision</h2>
-                <p>Write short text on the vision of the group</p>
+                <p>Our vision is to evolve into a thriving community that bridges the gap 
+                    between aspiring and experienced developers, creating a space where innovation,
+                    learning, and collaboration flourish. 
+                </p>
             </div>
         </div>
     </section>
@@ -72,5 +112,14 @@
     <footer>
 
     </footer>
+
+     <!-- AOS JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+     <script>
+         AOS.init({
+            duration: 1000,
+            once: false,
+        })
+     </script>
 </body>
 </html>
