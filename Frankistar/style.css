@@ -119,7 +119,7 @@ button {
 }
 
 .heroArticle {
-  width: 770px;
+  width: 50%;
   height: 490px;
   display: flex;
   flex-direction: column;
@@ -156,7 +156,7 @@ span.colored {
 }
 
 .heroImg {
-  width: 745px;
+  width: 50%;
   height: 725px;
   display: flex;
   position: absolute;
@@ -182,7 +182,20 @@ section article {
   height: 85%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.blog_Slider {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  gap: 40px;
+}
+
+.cardAbout {
+  flex: auto;
+  height: 100%;
+  background-color: #928a97;
 }
 
 .heading {
@@ -304,32 +317,6 @@ button.about:hover a {
   font-weight: 700;
 }
 
-/* .slide-right {
-  animation: slide-right 1500ms ease-in;
-}
-
-.slide-left {
-  animation: slide-left 1500ms ease-in;
-}
-
-@keyframes slide-right {
-  0% {
-    transform: translateX(-500px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slide-left {
-  0% {
-    transform: translateX(500px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-} */
-
 footer {
   position: absolute;
   bottom: 0;
@@ -408,60 +395,10 @@ footer {
   font-size: 14px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .hambuger {
     display: block;
     margin-right: 30px;
-  }
-
-.loaderWrap {
-  background-color: #ff7069;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 4;
-  display: none;
-}
-
-  .loader {
-    width: 44.8px;
-    height: 44.8px;
-    color: #283c63;
-    position: relative;
-    background: radial-gradient(11.2px,currentColor 94%,#0000);
-  }
-  
-  .loader:before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: 50%;
-    background: radial-gradient(10.08px at bottom right,#0000 94%,currentColor) top    left,
-            radial-gradient(10.08px at bottom left ,#0000 94%,currentColor) top    right,
-            radial-gradient(10.08px at top    right,#0000 94%,currentColor) bottom left,
-            radial-gradient(10.08px at top    left ,#0000 94%,currentColor) bottom right;
-    background-size: 22.4px 22.4px;
-    background-repeat: no-repeat;
-    animation: loader 1.5s infinite cubic-bezier(0.3,1,0,1);
-  }
-  
-  @keyframes loader {
-    33% {
-      inset: -11.2px;
-      transform: rotate(0deg);
-    }
-  
-    66% {
-      inset: -11.2px;
-      transform: rotate(90deg);
-    }
-  
-    100% {
-      inset: 0;
-      transform: rotate(90deg);
-    }
   }
 
   body {
