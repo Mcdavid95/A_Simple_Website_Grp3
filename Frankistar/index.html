@@ -3,41 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <title>HomePage</title>
   </head>
   <body>
-    <div class="loaderWrap">
-      <div class="loader"></div>
-    </div>
     <header>
       <nav>
-        <div class="logo"></div>
-        <div class="navbar">
-          <a href="index.html" class="active">Home</a>
-          <a href="blog.html">Blog</a>
-          <a href="#">About Us</a>
-          <a href="#">Contact Us</a>
+        <div class="logo" data-aos="fade-right"></div>
+
+        <div class="navbar" data-aos="fade-left">
+          <a href="../Frankistar/index.html"  class="active">Home</a>
+          <a href="../blog/blog.html">Blog</a>
+          <a href="../about/about.html">About Us</a>
+          <a href="../contactus/index.html">Contact Us</a>
         </div>
+
         <div class="hambuger">
-          <img src="./Assets/hambuger.svg" alt="" />
+          <img
+            id="menu-icon"
+            src="../Frankistar/Assets/hambuger.svg"
+            alt="hambuger"
+            onclick="toggleMenu()"
+          />
         </div>
       </nav>
     </header>
+
+    <div class="menu">
+      <div class="menu-lists">
+        <p class="active">00 <a href="../Frankistar/index.html">HomePage</a></p>
+        <p>01 <a href="../blog/blog.html">Blog</a></p>
+        <p>02 <a href="../about/about.html">About Us</a></p>
+        <p>
+          03 <a href="../contactus/index.html">Contact Us</a>
+        </p>
+      </div>
+    </div>
+
     <div class="contentWrapper">
       <div class="hero">
-        <div class="heroArticle">
+        <div class="heroArticle " data-aos="fade-right">
           <h1>
-            We <span class="colored">design</span> your feelings,
-            <span class="colored">code</span> emotions
+            Welcome to <span class="colored">WAGMI</span>
           </h1>
           <p>
-            We talented people with latest technologies can help you to fulfil
-            your dream.
+            <span class="colored">WAGMI</span> stands for "We're All Gonna Make It", reflecting our commitment to mutual success.
           </p>
-          <button class="heroBtn">All Work</button>
         </div>
-        <div class="heroImg">
+        <div class="heroImg" data-aos="fade-left">
           <img src="./Assets/vr 1.png" class="vr" />
         </div>
       </div>
@@ -45,6 +59,16 @@
       <section class="blog">
         <article>
           <h2 class="heading">Blog</h2>
+          <div class="featured">
+            <p>Explore insightful tech articles, project showcases, and tutorials crafted 
+              by our community to inspire and empower your tech journey.</p>
+
+          </div>
+          <!-- <div class="blog_Slider">
+            <div class="cardAbout"  data-aos="fade-right"></div>
+            <div class="cardAbout" data-aos="fade-down"></div>
+            <div class="cardAbout"  data-aos="fade-left"></div>
+          </div> -->
         </article>
       </section>
 
@@ -59,68 +83,53 @@
             </p>
           </div>
           <div class="articleSlider">
-            <div class="cards slide-right">
-              <div class="cardContent">
-                <div class="avatar">
-                  <img src="" alt="" />
-                </div>
-                <div class="namePosition">
-                  <h4 class="name wagmiFont">Mark David</h4>
-                  <p class="position wagmiFont">Founder & CEO</p>
-                </div>
-                <p class="desc wagmiFont">
-                  With over 10 years of experience, John ensures that everything
-                  is executed to perfection.
-                </p>
-              </div>
+    
+            <div class="team" data-aos="fade-right">
+              <img src="../about/images/admin.png" alt="admin image" />
+              <h3>VON</h3>
+              <p>Founder & CEO</p>
+              <p>
+                As the founder of WAGMI and a frontend developer, VON fosters
+                creativity and collaboration to help members grow.
+              </p>
             </div>
-            <div class="cards">
-              <div class="cardContent">
-                <div class="avatar">
-                  <img src="" alt="" />
-                </div>
-                <div class="namePosition">
-                  <h4 class="name wagmiFont">Von</h4>
-                  <p class="position wagmiFont">Admin</p>
-                </div>
-                <p class="desc wagmiFont">
-                  With over 10 years of experience, John ensures that everything
-                  is executed to perfection.
-                </p>
-              </div>
+    
+            <div class="team" data-aos="fade-up">
+              <img src="../about/images/admin.png" alt="admin image" />
+              <h3>McDavid</h3>
+              <p>Admin</p>
+              <p>
+                As a skilled backend software developer, McDavid guides members in
+                building robust and scalable applications.
+              </p>
             </div>
-            <div class="cards slide-left">
-              <div class="cardContent">
-                <div class="avatar">
-                  <img src="" alt="" />
-                </div>
-                <div class="namePosition">
-                  <h4 class="name wagmiFont">Ezra</h4>
-                  <p class="position wagmiFont">Admin</p>
-                </div>
-                <p class="desc wagmiFont">
-                  With over 10 years of experience, John ensures that everything
-                  is executed to perfection.
-                </p>
-              </div>
+    
+            <div class="team" data-aos="fade-left">
+              <img src="../about/images/admin.png" alt="admin image" />
+              <h3>Prosper</h3>
+              <p>Admin</p>
+              <p>
+                Prosper, a talented frontend developer, helps members enhance their
+                design and coding skills for user-friendly interfaces.
+              </p>
             </div>
           </div>
-          <button class="about"><a href="about.html">See More</a></button>
+          <button class="about" data-aos="zoom-in-up" onclick="window.location.href='../about/about.html'">See More</button>
         </article>
       </section>
     </div>
 
     <footer>
-      <!-- <div class="footer-content">
+      <div class="footer-content">
         <div class="left">
           <div class="logo">
           </div>
 
           <div class="links">
             <a href="index.html">HomePage</a>
-            <a href="#">Blog</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
+            <a href="../blog/blog.html">Blog</a>
+            <a href="../about/about.html">About Us</a>
+            <a href="../contactus/index.html">Contact Us</a>
           </div>
         </div>
 
@@ -133,28 +142,32 @@
           </div>
           <p>© 2024 WAGMI. All rights reserved.</p>
         </div>
-      </div> -->
+      </div>
     </footer>
 
-    <script>
-      // Get the loader div element
-      const loader = document.getElementsByClassName("loaderWrap");
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./index.js">
+  //     AOS.init({
+  //   duration: 2000, // Animation duration in ms
+  //   once: false, // Whether animation should happen only once while scrolling down
+  // });
 
-      // Set the display property to "block" to show the loader
-      loader.style.display = "block";
 
-      // Wait for 5 seconds (5000 milliseconds)
-      setTimeout(() => {
-        // Hide the loader by changing display to "none"
-        loader.style.display = "none";
+  //     function toggleMenu() {
+  //   var menuIcon = document.getElementById("menu-icon");
+  //   var menu = document.getElementsByClassName("menu")[0];
 
-        // Display your website content
-        document.getElementsByClassName("contentWrapper").style.display =
-          "block";
-      }, 5000);
+  //   if (menu.style.display === "none") {
+  //     menu.style.display = "block";
+  //     menuIcon.src = "../Frankistar/Assets/Close.svg";
+  //   } else {
+  //     menu.style.display = "none";
+  //     menuIcon.src = "../Frankistar/Assets/hambuger.svg";
+  //   }
+  // }
 
-      // Additional code to ensure the website content is hidden initially
-      document.getElementsByClassName("contentWrapper").style.display = "none";
+
     </script>
+    
   </body>
 </html>

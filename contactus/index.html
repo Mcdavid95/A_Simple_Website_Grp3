@@ -1,33 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="contact-container">
-        <h2>Contact Us</h2>
-        <form action="https://formspree.io/f/xldepwrv" method="POST" id="contactForm">
-            <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit">Send</button>
-        </form>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo" data-aos="fade-right"></div>
 
-        <footer>
-            <p>&copy; 2024 WAGMI</p>
-        </footer>
+        <div class="navbar" data-aos="fade-left">
+          <a href="../Frankistar/index.html">Home</a>
+          <a href="../blog/blog.html">Blog</a>
+          <a href="../about/about.html">About Us</a>
+          <a href="../contactus/index.html" class="active">Contact Us</a>
+        </div>
+
+        <div class="hambuger">
+          <img
+            id="menu-icon"
+            src="../Frankistar/Assets/hambuger.svg"
+            alt="hambuger"
+            onclick="toggleMenu()"
+          />
+        </div>
+      </nav>
+    </header>
+
+    <div class="menu">
+      <div class="menu-lists">
+        <p>00 <a href="../Frankistar/index.html">HomePage</a></p>
+        <p>01 <a href="../blog/blog.html">Blog</a></p>
+        <p>02 <a href="../about/about.html">About Us</a></p>
+        <p class="active">
+          03 <a href="../contactus/index.html">Contact Us</a>
+        </p>
+      </div>
     </div>
-</body>
+
+    <div
+      class="contact-container"
+      data-aos="zoom-out"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"
+    >
+      <h2 class="wagmiFont" data-aos="fade-left">Contact Us</h2>
+      <form id="contactForm" onsubmit="return handleSubmit(event)">
+        <div class="form-group" data-aos="fade-left">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group" data-aos="fade-right">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group" data-aos="fade-down">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" data-aos="fade-up">Submit</button>
+      </form>
+      <div id="successMessage" class="success-message">
+        Your message has been sent successfully!
+      </div>
+
+      <footer>
+        <p data-aos="zoom-in">&copy; 2024 WAGMI</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000, // Animation duration in ms
+        once: false, // Whether animation should happen only once while scrolling down
+      });
+
+      function toggleMenu() {
+        var menuIcon = document.getElementById("menu-icon");
+        var menu = document.getElementsByClassName("menu")[0];
+
+        if (menu.style.display === "none") {
+          menu.style.display = "block";
+          menuIcon.src = "../Frankistar/Assets/Close.svg";
+        } else {
+          menu.style.display = "none";
+          menuIcon.src = "../Frankistar/Assets/hambuger.svg";
+        }
+      }
+    </script>
+  </body>
 </html>
