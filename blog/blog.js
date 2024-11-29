@@ -16,8 +16,9 @@ axios.get(url)
         console.log('post:', post)
         if (post == postData[0]) {
             
-            // const imageUrl = post["jetpack_featured_media_url"];
+            const imageUrl = post["jetpack_featured_media_url"];
             const featuredElement = document.querySelector('.featured')
+            featuredElement.style.backgroundImage = `url(${imageUrl})`
             featuredElement.innerHTML = `
              <div class="text-overlay">
                 <i><h5>Featured</h5><i>
